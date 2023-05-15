@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <title>NPS - AVALIA PIAUÍ</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="logo-container">
+                <img class="logo" src="Images/Logo.svg" alt="logo SEAD" />
+            </div>
+
+            <div class="capa-container">
+                <img class="texto-imagem-capa" src="Images/Capa-texto.svg" alt="Avalia Piauí" />
+                <img class="capa" src="Images/Capa.png" alt="capa NPS" />
+            </div>
+
+            <div class="main">
+                <div class="text">
+                    <h3>Olá, <span id="nome"></span>.</h2>
+                        <p class="subtitle">Como foi sua experiência ao utilizar o nosso servico?</p>
+                        <p>Avalie este serviço prestado pelo Governo do Estado do Piauí.</p>
+                        <br />
+                        <p>Queremos te ouvir. É rapidinho, leva apenas 30 segundos.</p>
+                </div>
+                
+                <div class="image-frame">
+                    <img class="frame" src="Images/Frame.png" />
+                </div>
+
+                <button class="button">
+                    Iniciar
+                </button>
+            </div>
+
+            <div class="pesquisa">
+                <div class="pesquisa-content">
+                    <span>Secretaria de Administração do Estado do Piauí</span>
+
+                    <p>
+                        Em uma escala de 1 a 5, quanto você recomendaria nosso serviço para outras pessoas?
+                    </p>
+
+                    <div id="btn-pesquisa" class="btn-pesquisa">
+                        <button id="btn-1" class="btn-action escala" value="1">
+                            1
+                        </button>
+
+                        <button id="btn-2" class="btn-action escala" value="2">
+                            2
+                        </button>
+
+                        <button id="btn-3" class="btn-action escala" value="3">
+                            3
+                        </button>
+
+                        <button id="btn-4" class="btn-action escala" value="4">
+                            4
+                        </button>
+
+                        <button id="btn-5" class="btn-action escala" value="5">
+                            5
+                        </button>
+                    </div>
+
+                    <p>
+                        Você sentiu falta de algum equipamento, ferramenta ou material que pudesse melhorar a qualidade do seu atendimento?
+                    </p>
+
+                    <div id="sentir-falta" class="btn-pesquisa">
+                        <button id="sim-falta" class="btn-action" value="Sim">
+                            Sim
+                        </button>
+
+                        <button id="nao-falta" class="btn-action" value="Nao">
+                            Não
+                        </button>
+                    </div>
+
+                    <p>
+                        Você ficou satisfeito com o nosso atendimento?
+                    </p>
+
+                    <div id="satisfeito" class="btn-pesquisa">
+                        <button id="sim-satisfeito" class="btn-action" value="Sim">
+                            Sim
+                        </button>
+
+                        <button id="nao-satisfeito" class="btn-action" value="Nao">
+                            Não
+                        </button>
+                    </div>
+
+                    <p>
+                        Queremos sempre melhorar. Então deixe aqui seu comentário, critica ou sugestão.
+                    </p>
+
+                    <textarea id="textarea" class="textarea"></textarea>
+
+                    <footer>
+                        <button id="enviar" class="enviar" onclick="enviarNps()">
+                            Enviar resposta
+                        </button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
