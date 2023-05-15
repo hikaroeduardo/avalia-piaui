@@ -5,6 +5,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+ }
+
 .container {
     display: flex;
     justify-content: center;
@@ -24,8 +28,8 @@
 
 .texto-imagem-capa {
     position: absolute;
-    width: 16rem;
-    top: 4.5rem;
+    width: 35%;
+    top: 3rem;
     left: 2rem;
 }
 
@@ -84,9 +88,14 @@
     border: none;
     color: #fff;
     border-radius: .3rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     position: absolute;
     bottom: -1.3rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 .pesquisa {
