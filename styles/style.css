@@ -28,8 +28,8 @@ html{
 
 .texto-imagem-capa {
     position: absolute;
-    width: 35%;
-    top: 3rem;
+    width: 15rem;;
+    top: 4.5rem;
     left: 2rem;
 }
 
@@ -188,4 +188,13 @@ footer {
 .check {
     background-color: #FDB913;
     color: #fff;
+}
+
+@media (max-width: 600px) {
+    .texto-imagem-capa {
+        position: absolute;
+        width: 35%;
+        top: 3rem;
+        left: 2rem;
+    }
 }
